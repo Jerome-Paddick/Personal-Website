@@ -20,8 +20,10 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('cv', views.cv, name='cv'),
+    path('about', views.about, name='about'),
     path('visualisation', include('visualisation.urls')),
     path('admin/', admin.site.urls),
+
 ]
 
 from django.views.generic import TemplateView

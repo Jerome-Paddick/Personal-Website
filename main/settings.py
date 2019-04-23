@@ -123,7 +123,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
     r"C:\Users\jkpad\Desktop\Personal Website\Personal Website\main\static",
-    r"C:\Users\jkpad\Desktop\Personal Website\Personal Website\visualisation\static"
+    r"C:\Users\jkpad\Desktop\Personal Website\Personal Website\visualisation\static",
+    r"C:\Users\jkpad\Desktop\Personal Website\Personal Website\main\templates",
 ]

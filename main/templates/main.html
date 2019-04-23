@@ -7,17 +7,6 @@
 </head>
 <style>
 
-    .header {
-        position:fixed;
-        height:50px;
-        background:black;
-        width:100%;
-        top:0px;
-        left:0px;
-        }
-    .access {
-        background:black;
-    }
     .mountain{
         height:100vh;
         position: relative;
@@ -32,37 +21,18 @@
         position: relative;
         }
 
-
-
-
     body {background-colour: white;}
-
-
 
 </style>
 
-
-
-
-
 <body>
 
-        <div id="header">
-
-            <nav id="access" role="navigation">
-            <ul>
-                <li><a href="{% url 'index' %}">Home</a></li>
-                <li><a href="{% url 'cv' %}">Qualifications</a></li>
-                <li><a href="/visualisation">Visualizations</a></li>
-                <li><a href="/contact">Contact Me</a></li>
-            </ul>
-            </nav>
-
-        </div>
         {% load static %}
     <div class="mountain">
         <img src="{% static 'Low-Poly.jpg' %}" alt="My image">
     </div>
+
+{% include 'banner.html' %}
 
 </body>
 </html>
