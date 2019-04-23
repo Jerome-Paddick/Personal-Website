@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'visualisation.apps.VisualisationConfig'
 ]
 
@@ -124,5 +125,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     r"C:\Users\jkpad\Desktop\Personal Website\Personal Website\main\static",
-    r"C:\Users\jkpad\Desktop\Personal Website\Personal Website\visualisation\templates"
+    r"C:\Users\jkpad\Desktop\Personal Website\Personal Website\visualisation\static"
 ]

@@ -1,6 +1,7 @@
 <html>
 <body>
 <svg id='viz'></svg>
+
 </body>
 
 <script src='https://d3js.org/d3.v5.min.js'></script>
@@ -10,8 +11,8 @@ var height = 600;
 var color = d3.scaleOrdinal(d3.schemeCategory10);
 
 {% load static %}
-       <iframe src="{% static 'Jerome Paddick - CV.pdf' %}"
-d3.json({% static "miserables.json"}).then(function(graph) {
+
+d3.json("{% static "miserables.json" %}").then(function(graph) {
 
 var label = {
     'nodes': [],
@@ -183,4 +184,6 @@ function dragended(d) {
 
 }); // d3.json
 </script>
+
+
 </html>
